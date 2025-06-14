@@ -1,0 +1,29 @@
+.nav-top {
+  background-color: #282c34;
+  padding: 1rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-top a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav-top a:hover {
+  background-color: #61dafb;
+  color: black;
+}
+.name-project{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+}
