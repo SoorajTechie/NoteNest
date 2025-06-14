@@ -1,7 +1,6 @@
 # NoteNest 📝  
 *A full-stack notes application built with React (Frontend) and Node.js (Backend). Store, organize, and manage your notes effortlessly with a clean and intuitive UI.*
 
-![NoteNest Demo](https://via.placeholder.com/800x400?text=NoteNest+Demo) *(Replace with actual screenshot or GIF)*
 
 ---
 
