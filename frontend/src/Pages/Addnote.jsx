@@ -21,7 +21,7 @@ const Addnote = () => {
 
     const Addnote = async() =>{
 
-        await axios.post("http://localhost:8000/api/create",notes);
+        await axios.post("https://notenest-aphs.onrender.com/api/create",notes);
 
         toast.success("Note created",{position:"top-center"});
        // navigate("/dashboard");
