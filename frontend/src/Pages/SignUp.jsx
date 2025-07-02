@@ -35,7 +35,7 @@ function Register()
 
       
 
-            await axios.post("http://localhost:8000/api/register",user)
+            await axios.post("https://notenest-aphs.onrender.com/api/register",user)
             .then((response)=>{
                 toast.success(response.data.message,{position:"top-center"});
                 navigate("/login");
