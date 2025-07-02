@@ -28,7 +28,7 @@ const Login = ()=>{
         e.preventDefault();
 
         try {
-            const res = await axios.post("http://localhost:8000/api/login",user,{
+            const res = await axios.post("https://notenest-aphs.onrender.com/api/login",user,{
                  withCredentials: true,
             });
             toast.success("Login success",{position:"top-center"});
