@@ -14,7 +14,7 @@ const Dashboard = () => {
   // Fetch user profile on mount
   useEffect(() => {
     axios
-      .get("https://notenest-aphs.onrender.com/api/profile")
+      .get("http://localhost:8000/api/profile")
       .then((res) => setUser(res.data))
       .catch(() => {
         toast.error("Not authenticated",{position:"top-center"});
@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("https://notenest-aphs.onrender.com/api/logout");
+      await axios.get("http://localhost:8000/api/logout");
       toast.success("Logged out",{position:"top-center"});
       navigate("/login");
     } catch (error) {
@@ -35,7 +35,7 @@ const Dashboard = () => {
   // Fetch notes
   const fetchNotes = async () => {
     try {
-      const res = await axios.get("https://notenest-aphs.onrender.com/api/get");
+      const res = await axios.get("http://localhost:8000/api/get");
       setNotes(res.data);
     } catch (err) {
       console.error(err);
@@ -43,7 +43,7 @@ const Dashboard = () => {
   };
 
   const deleteNote = async (id) => {
-    await axios.delete(`https://notenest-aphs.onrender.com/api/delete/${id}`);
+    await axios.delete(`http://localhost:8000/api/delete/${id}`);
     toast.success("Note Deleted",{position:"top-center"});
 
     fetchNotes();
