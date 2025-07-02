@@ -2,7 +2,7 @@ function About()
 {
 
     return(<>
-        <div>about loogeddd</div>
+        <div>Update soon ...</div>
         
     </>)
 
