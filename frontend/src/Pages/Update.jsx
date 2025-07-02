@@ -19,7 +19,7 @@ const Update = () => {
   };
 
   const handleSubmit = async () => {
-    await axios.put(`https://notenest-aphs.onrender.com/api/update/${id}`, form, {
+    await axios.put(`http://localhost:8000/api/update/${id}`, form, {
       withCredentials: true,
     });
     navigate("/dashboard");
